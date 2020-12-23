@@ -76,6 +76,7 @@
                     type="text"
                     name="Name"
                     class="input"
+                    id="username"
                     placeholder="Enter your username"
                   />
                   <div class="my_form_check mt-3">
@@ -93,7 +94,7 @@
                 <!-- info 2 -->
                 <div class="inf-2 d-none">
                   <div class="number position-relative">
-                    <div class="icon">
+                    <div class="icon" id="icon_back">
                       <img
                         src="assets/images/cil_arrow-circle-right.png"
                         class="img-fluid"
@@ -101,10 +102,10 @@
                     </div>
                     <div class="num">
                       <input
-                        type="number"
+                        type="text"
                         name="Name"
+                        id="usernametape2"
                         class="input-num"
-                        placeholder="039139139193"
                       />
                     </div>
                   </div>
@@ -141,7 +142,7 @@
                     <div class="py-4 px-4">
                       <button
                         type="button"
-                        class="submit btn2"
+                        class="submit btn2 btn_next"
                         data-toggle="modal"
                         data-target="#exampleModalCenter"
                       >
