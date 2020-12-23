@@ -3,6 +3,8 @@ $(document).ready(function () {
     $(".btn1").addClass("d-none");
     $(".inf-1").addClass("d-none");
     $(".inf-2").removeClass("d-none");
+    $(".sec_btn").addClass("d-none");
+
     var username = $("#username").val();
     sessionStorage.setItem("lastname", username);
     $("#usernametape2").val(sessionStorage.getItem("lastname"));
@@ -11,6 +13,8 @@ $(document).ready(function () {
     $(".btn1").removeClass("d-none");
     $(".inf-1").removeClass("d-none");
     $(".inf-2").addClass("d-none");
+    $(".sec_btn").removeClass("d-none");
+
     var username = $("#username").val();
     sessionStorage.setItem("lastname", username);
     $("#usernametape2").val(sessionStorage.getItem("lastname"));
