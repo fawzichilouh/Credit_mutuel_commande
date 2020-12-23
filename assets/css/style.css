@@ -30,7 +30,7 @@
   left: 50%;
   background: #ffffff;
   box-shadow: 5px 10px 40px rgba(143, 143, 143, 0.3);
-  border-radius: 10px;
+  border-radius: 12px;
   min-height: 500px;
   width: 100%;
   max-width: 500px;
@@ -136,7 +136,7 @@ button:focus {
   width: 100%;
   background: #efefef;
   border-radius: 2px;
-  padding: 15px 0;
+  padding: 6px 0;
   border-right: 1px solid #fff;
 }
 .num {
@@ -146,7 +146,7 @@ button:focus {
   background: #efefef;
   border-radius: 2px;
   border: 0;
-  padding: 22px 0;
+  padding: 15px 0;
   width: 100%;
   padding-left: 60px;
   font-size: 14px;
@@ -169,8 +169,7 @@ button:focus {
   border: 0;
   width: 100%;
 }
-.msg {
-  clip-path: polygon(
+/* clip-path: polygon(
     33% 15%,
     100% 15%,
     100% 100%,
@@ -178,11 +177,24 @@ button:focus {
     0 15%,
     25% 15%,
     29% 3%
-  );
+  );*/
+.msg {
   background: #efefef;
   border-radius: 3px;
-  min-height: 145px;
-  padding-top: 55px;
+  padding-top: 8px;
+  position: relative;
+  margin-top: 25px;
+}
+.msg::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -8px;
+  left: 25%;
+  border: 8px solid;
+  border-color: #efefef #efefef transparent transparent;
+  transform: rotate(-45deg);
 }
 .pass {
   position: relative;
