@@ -1,323 +1,258 @@
-* {
-  font-family: "Maven Pro", sans-serif;
-  /*    transition: all 0.5s linear;*/
-}
-.color {
-  font-size: 18px;
-  color: #e03136;
-}
-.b {
-  font-weight: 700;
-}
-::placeholder {
-  color: #888686;
-}
-.header {
-  background: url(../images/bg.png) no-repeat center;
-  background-size: cover;
-  min-height: 440px;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-.content {
-  min-height: 200px;
-  position: relative;
-}
-.form {
-  position: absolute;
-  top: -40%;
-  left: 50%;
-  background: #ffffff;
-  box-shadow: 5px 10px 40px rgba(143, 143, 143, 0.3);
-  border-radius: 10px;
-  min-height: 500px;
-  width: 100%;
-  max-width: 500px;
-  transform: translate(-50%, -50%);
-  padding: 20px 40px;
-}
-@media (max-width: 992px) {
-  .form {
-    margin: auto;
-    position: relative;
-    top: 0;
-    left: 0%;
-    background: #ffffff;
-    box-shadow: none;
-    border-radius: 0;
-    min-height: 500px;
-    width: 100%;
-    max-width: 500px;
-    transform: translate(-0%, -0%);
-    padding: 20px 15px;
-  }
-  .header {
-    background: #fff;
-    min-height: 0px;
-  }
-}
-.logo_img {
-  height: 30px;
-}
-.btn_next {
-  width: 70% !important;
-  margin: auto;
-  display: block;
-}
-@media (max-width: 992px) {
-  .btn_next {
-    width: 90% !important;
-    margin: auto;
-  }
-}
-footer hr {
-  border: 0.75px solid #eee;
-  border-radius: 3px;
-}
-footer p {
-  font-size: 13px;
-  line-height: 22px;
-  color: #444444;
-}
-.container {
-  max-width: 677px;
-}
-h5 {
-  padding-top: 16px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #444444;
-}
-label {
-  font-size: 14px;
-  line-height: 16px;
-  color: #444444;
-}
-.input {
-  background: #ffffff;
-  border: 0.75px solid #e0dcdc;
-  box-sizing: border-box;
-  border-radius: 2px;
-  width: 100%;
-  padding: 20px 10px;
-  font-size: 14px;
-  line-height: 16px;
-  color: #888686;
-}
-@media (max-width: 992px) {
-  .input {
-    padding: 10px 8px;
-  }
-}
-.submit {
-  background: #e03136;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #ffffff;
-  border: 0;
-  width: 100%;
-  padding: 12px;
-}
-button:focus {
-  outline: 0;
-}
-.icon {
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  max-width: 50px;
-  width: 100%;
-  background: #efefef;
-  border-radius: 2px;
-  padding: 15px 0;
-  border-right: 1px solid #fff;
-}
-.num {
-  width: 100%;
-}
-.input-num {
-  background: #efefef;
-  border-radius: 2px;
-  border: 0;
-  padding: 22px 0;
-  width: 100%;
-  padding-left: 60px;
-  font-size: 14px;
-  line-height: 16px;
-  color: #444444;
-}
-.buttons .active {
-  background: #424242;
-  border-radius: 2px;
-}
-.btn-con {
-  background: #7a7a7a;
-  border-radius: 2px;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 15px;
-  text-align: center;
-  color: #ffffff;
-  padding: 15px 0;
-  border: 0;
-  width: 100%;
-}
-.msg {
-  clip-path: polygon(
-    33% 15%,
-    100% 15%,
-    100% 100%,
-    0 100%,
-    0 15%,
-    25% 15%,
-    29% 3%
-  );
-  background: #efefef;
-  border-radius: 3px;
-  min-height: 145px;
-  padding-top: 55px;
-}
-.pass {
-  position: relative;
-}
-.field-icon {
-  float: right;
-  margin-left: -25px;
-  margin-top: -33px;
-  position: relative;
-  right: 15px;
-  z-index: 2;
-}
-.pasword {
-  background: #ffffff;
-  border: 0.75px solid #e0dcdc;
-  box-sizing: border-box;
-  border-radius: 2px;
-  padding: 12px;
-  width: 100%;
-}
-.msg .form-control {
-  background: #ffffff;
-  border: 0.75px solid #e0dcdc;
-  box-sizing: border-box;
-  border-radius: 2px;
-  padding: 25px 15px !important;
-  font-size: 13px;
-  line-height: 15px;
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Link to your css file -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-  color: #888686;
-}
-.modal-body {
-  padding: 20px 35px;
-}
-.modal-body h6 {
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #444444;
-}
-.modal-body p {
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  color: #666666;
-}
-.btn-red {
-  background: #e03136;
-  border-radius: 2px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 38px;
-  border: 0;
-  width: 100%;
-  margin: 5px 0;
-  color: #fff;
-}
-.btn-gray {
-  background: #988f88;
-  border-radius: 2px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 38px;
-  border: 0;
-  width: 100%;
-  margin: 5px 0;
-  color: #fff;
-  max-width: 280px;
-}
-.access p {
-  font-size: 17px;
-  text-decoration: underline;
-}
-/*  -jj --   */
+  <body>
+    <div class="menu">
+      <div class="container-fluid">
+        <div class="row pb-3 align-items-center">
+          <div class="col-lg-6 pt-3 text-center text-lg-left">
+            <a href="#" class=""
+              ><img
+                src="assets/images/logo%20(1)%201.png"
+                class="img-fluid logo_img"
+            /></a>
+          </div>
+          <div class="col-lg-6 pt-2 text-center text-lg-right">
+            <p class="color" style="margin-bottom: 0">
+              <span class="b">Welcome</span> <br class="d-block d-lg-none" />
+              to your customer area
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-@media (max-width: 992px) {
-  .title_login {
-    font-size: 15px;
-    margin-bottom: 2vh;
-  }
-  .img_login {
-    width: 24vw;
-  }
-  .access p {
-    font-size: 16px;
-  }
-}
+    <!-- Content -->
+    <div class="header"></div>
+    <div class="content pb-4">
+      <div class="form">
+        <div class="container-fluid">
+          <div class="box">
+            <!-- 1st information -->
+            <div class="box-content-1">
+              <div class="text-center">
+                <img
+                  src="assets/images/lock-icon.png"
+                  class="img-fluid img_login"
+                />
+                <h5 class="title_login">ACCESS TO YOUR CUSTOMER AREA</h5>
+              </div>
+              <form action="#" method="post">
+                <!-- info 1 -->
+                <div class="inf-1">
+                  <label>Username</label>
+                  <input
+                    type="text"
+                    name="Name"
+                    class="input"
+                    placeholder="Enter your username"
+                  />
+                  <div class="my_form_check mt-3">
+                    <input
+                      class="styled-checkbox"
+                      id="styled-checkbox-1"
+                      type="checkbox"
+                      value="value1"
+                    />
+                    <label for="styled-checkbox-1">Remember me</label>
+                  </div>
+                </div>
+                <!-- info 1 End -->
 
-.my_form_check {
-  display: inline-block;
-  margin: 2vh 0;
-}
+                <!-- info 2 -->
+                <div class="inf-2 d-none">
+                  <div class="number position-relative">
+                    <div class="icon">
+                      <img
+                        src="assets/images/cil_arrow-circle-right.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="num">
+                      <input
+                        type="number"
+                        name="Name"
+                        class="input-num"
+                        placeholder="039139139193"
+                      />
+                    </div>
+                  </div>
+                  <div class="buttons pt-3">
+                    <div class="row">
+                      <div class="col-6 pr-1">
+                        <button class="btn-con active">
+                          Login via password
+                        </button>
+                      </div>
+                      <div class="col-6 pl-1">
+                        <button class="btn-con">Login via password</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="msg">
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">Password</label>
+                      <div class="col-md-12">
+                        <input
+                          id="password-field"
+                          type="password"
+                          class="form-control"
+                          name="password"
+                          value=""
+                          placeholder="enter your password"
+                        />
+                        <span
+                          toggle="#password-field"
+                          class="fa fa-fw fa-eye field-icon toggle-password"
+                        ></span>
+                      </div>
+                    </div>
+                    <div class="py-4 px-4">
+                      <button
+                        type="button"
+                        class="submit btn2"
+                        data-toggle="modal"
+                        data-target="#exampleModalCenter"
+                      >
+                        To log in
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- info 2 End -->
+                <div class="pt-4 text-center">
+                  <button type="button" class="submit btn1 btn_next">
+                    next
+                  </button>
+                </div>
+                <div class="pt-5 text-center access">
+                  <p class="color pt-3">
+                    Access codes forgotten / Access blocked
+                  </p>
+                </div>
+              </form>
+            </div>
+            <!-- 1st information End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content End -->
 
-.styled-checkbox {
-  position: absolute;
-  opacity: 0;
-}
-.styled-checkbox + label {
-  position: relative;
-  cursor: pointer;
-  padding: 0;
-}
-.styled-checkbox + label:before {
-  content: "";
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: text-top;
-  width: 24px;
-  height: 24px;
-  background: #fff;
-  border-radius: 3px;
-  box-shadow: 0 0 1px 1px #ddd;
-}
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid text-center">
+        <div class="container">
+          <div class="pb-4"></div>
+          <p class="mb-0" style="word-spacing: 5px">
+            Accessibility / Legal Notice / Consumer Info / Personal data /
+            Service pricing / General Banking Conditions / © Crédit Mutuel Arkéa
+          </p>
+          <!--                    <span></span>-->
+          <div class="pt-3 pb-4">
+            <a href="#" class="mx-2"
+              ><img src="assets/images/cib_facebook-f.png" class="img-fluid"
+            /></a>
+            <a href="#" class="mx-2"
+              ><img src="assets/images/bx_bxl-twitter.png" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
 
-.styled-checkbox:hover + label:before {
-  background: #dadada;
-}
-.styled-checkbox:focus + label:before {
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
-}
-.styled-checkbox:checked + label:before {
-  background: #e03136;
-}
-.styled-checkbox:disabled + label {
-  color: #b8b8b8;
-  cursor: auto;
-}
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="text-center">
+              <h6>Connection error</h6>
+              <p class="pt-2">
+                <span class="b"
+                  >Your username is unknown or your password is <br />
+                  incorrect.</span
+                >
+                Please renew your identification
+              </p>
+              <p class="b">
+                Please note, your access will be blocked after 3 incorrect<br />
+                attempts
+              </p>
 
-.styled-checkbox:checked + label:after {
-  content: "";
-  position: absolute;
-  left: 6px;
-  top: 10px;
-  background: white;
-  width: 2.5px;
-  height: 2.5px;
-  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
-    4px -6px 0 white, 4px -8px 0 white;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
+              <div class="pt-4">
+                <button class="btn-red">Forgotten access codes</button>
+                <button class="btn-red">Unblock my access</button>
+                <button
+                  class="btn-gray"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  To close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
