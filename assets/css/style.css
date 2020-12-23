@@ -17,12 +17,13 @@
   background-size: cover;
   min-height: 440px;
 }
+
 .content {
   min-height: 400px;
 }
 .form {
   position: absolute;
-  top: 50;
+  top: 40%;
   left: 50%;
   background: #ffffff;
   box-shadow: 5px 10px 40px rgba(143, 143, 143, 0.3);
@@ -52,6 +53,9 @@
     background: #fff;
     min-height: 0px;
   }
+}
+.logo_img {
+  height: 30px;
 }
 .btn_next {
   width: 70% !important;
@@ -246,6 +250,7 @@ button:focus {
 }
 .access p {
   font-size: 17px;
+  text-decoration: underline;
 }
 /*  -jj --   */
 
