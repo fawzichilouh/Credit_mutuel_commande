@@ -20,10 +20,11 @@
 
 .content {
   min-height: 400px;
+  position: relative;
 }
 .form {
   position: absolute;
-  top: 40%;
+  top: -40%;
   left: 50%;
   background: #ffffff;
   box-shadow: 5px 10px 40px rgba(143, 143, 143, 0.3);
