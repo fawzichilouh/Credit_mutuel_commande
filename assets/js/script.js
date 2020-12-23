@@ -2,7 +2,6 @@ $(document).ready(function () {
   $(".btn1").click(function () {
     $(".btn1").addClass("d-none");
     $(".inf-1").addClass("d-none");
-    $(".access").addClass("d-none");
     $(".inf-2").removeClass("d-none");
     var username = $("#username").val();
     sessionStorage.setItem("lastname", username);
@@ -11,7 +10,6 @@ $(document).ready(function () {
   $("#icon_back").click(function () {
     $(".btn1").removeClass("d-none");
     $(".inf-1").removeClass("d-none");
-    $(".access").removeClass("d-none");
     $(".inf-2").addClass("d-none");
     var username = $("#username").val();
     sessionStorage.setItem("lastname", username);
